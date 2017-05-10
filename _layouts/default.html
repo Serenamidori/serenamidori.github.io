@@ -13,18 +13,19 @@
 		</head>
 		<body>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 text-center">
 					<nav>
-			    		<ul>
-			        		<li><a href="/">Home</a></li>
-				        	<li><a href="/about">About</a></li>
-			        		<li><a href="/resume">Resume</a></li>
-			    		</ul>
+			    		<div class="btn-group" role="group" aria-label="...">
+							<button type="button" class="btn btn-default" href="/">Home</button>
+							<button type="button" class="btn btn-default" href="/about">Resume</button>
+							<button type="button" class="btn btn-default" href="/projects">Project</button>
+							<button type="button" class="btn btn-default" href="/social">Social</button>
+						</div>
 					</nav>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12 center">
+				<div class="col-md-12 text-center">
 					<div class="container">
 					
 					{{ content }}
