@@ -12,11 +12,11 @@ body {
 }
 
 .text-white {
-    color: #38160a !important;
+    color: #FFFFFF !important;
 }
 
 .well {
-   background-color: rgba(245, 245, 245, 0.4);
+   background-color: rgba(245, 245, 245, 0.4) !important;
 }
 
 
