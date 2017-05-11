@@ -15,6 +15,9 @@ body {
     color: #38160a !important;
 }
 
+.well {
+   background-color: rgba(245, 245, 245, 0.4);
+}
 
 
 nav ul, footer ul {
