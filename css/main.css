@@ -7,10 +7,13 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png"), linear-gradient(to right, rgba(106,45,138,1), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(106,45,138,1));
 }
 
-.title {
-    color: #FFFFFF !important;
+.text-brown {
+    color: #38160a !important;
 }
 
+.text-white {
+    color: #38160a !important;
+}
 
 
 
