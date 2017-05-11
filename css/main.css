@@ -13,12 +13,12 @@ body {
 
 .well {
    background-color: rgba(245, 245, 245, 0.6) !important;
-   padding-top: 20px !important;
+   margin-top: 25px !important;
 }
 
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;    
     padding: 0px;
     list-style: none;
     font-weight: bold;
