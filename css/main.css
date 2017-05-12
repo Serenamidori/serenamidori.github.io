@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important;
+    font-family: Verdana,Geneva,sans-serif !important;
     background-color: #ADCEAF !important;
     background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
     /*background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png"), linear-gradient(to right, rgba(65,23,55,1), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(65,23,55,1));*/
@@ -11,7 +11,7 @@ body {
 }
 
 .well {
-   background-color: rgba(245, 245, 245, 0.6) !important;
+   background-color: rgba(245, 245, 245, 0.7) !important;
    margin-top: 25px !important;
 }
 
@@ -23,45 +23,4 @@ body {
 
 h1 { 
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif; 
-}
-
-
-
-nav ul, footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
 }
