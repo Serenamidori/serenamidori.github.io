@@ -1,10 +1,9 @@
 body {
     height: 100%;
-    /*font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;*/
-    
-    background-color: #C95645 !important;
+    font-family: Verdana,Geneva,sans-serif !important;
+    background-color: #5A334B !important;
     background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
-    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png"), linear-gradient(to right, rgba(65,23,55,1), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(65,23,55,1));
+    /*background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png"), linear-gradient(to right, rgba(65,23,55,1), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(65,23,55,1));*/
 }
 
 .text-white {
@@ -18,7 +17,6 @@ body {
 
 
 nav ul, footer ul {
-    font-family: Verdana,Geneva,sans-serif;    
     padding: 0px;
     list-style: none;
     font-weight: bold;
