@@ -8,9 +8,10 @@ h1 {
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
 }
 
-.carousel .item img {
+
+.carousel-inner .item img {
     max-height: 300px;
-    min-width: auto;
+    width: auto;
     margin: 0 auto;
 }
 .navbar-nav {
