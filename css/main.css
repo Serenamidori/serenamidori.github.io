@@ -4,11 +4,39 @@ body {
     background-color: #ADCEAF !important;
     background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
 }
+h1 { 
+    font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
+}
 
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+}
 .text-white {
     color: #FFFFFF !important;
 }
-
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .well {
    background-color: rgba(245, 245, 245, 0.7) !important;
    margin-top: 25px !important;
@@ -20,23 +48,11 @@ body {
     src: url('/css/assets/StreetscriptRedux.otf');
 }
 
-h1 { 
-    font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
-}
 
-.navbar-nav {
-    width: 100%;
-    text-align: center;
-}
-.navbar-nav li {
-    float: none;
-    display: inline-block;
-}
 
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
+
+
+
+
+
