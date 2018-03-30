@@ -11,6 +11,7 @@ h1 {
 
 .carousel-inner .item img {
     max-height: 300px;
+    min-height: 300px;
     width: auto;
     margin: 0 auto;
 }
