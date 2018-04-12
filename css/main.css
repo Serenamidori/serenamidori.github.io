@@ -21,7 +21,6 @@ h1 {
 .navbar-nav li {
     float: none;
     display: inline-block;
-    
 }
 .navbar-nav li:hover {
     background-color: #e2e2e2;
