@@ -2,7 +2,7 @@ body {
     height: 100%;
     font-family: Verdana,Geneva,sans-serif !important;
     background-color: #ADCEAF !important;
-    background-image: url("/css/assets/gradient-squares.png");
+    background-image: url("gradient-squares.png");
 }
 h1 { 
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
