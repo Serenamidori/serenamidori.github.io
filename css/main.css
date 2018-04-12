@@ -1,28 +1,16 @@
-@media screen and (max-width: 667px) {
-    body {
-        overflow-x: hidden !important;
-    }
-    .container {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
-}
-
 body {
     height: 100%;
     font-family: Verdana,Geneva,sans-serif !important;
     background-color: #11001a !important;
     background-image: url('/css/assets/gradient-squares.png');
+    overflow-x: hidden !important;
 }
 h1 { 
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
 }
-
-.carousel-inner .item img {
-    max-height: 300px;
-    min-height: 300px;
-    width: auto;
-    margin: 0 auto;
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 .navbar-nav {
     width: 100%;
@@ -56,9 +44,7 @@ h1 {
    background-color: rgba(245, 245, 245, 0.7) !important;
    margin-top: 25px !important;
 }
-
-@font-face 
-{
+@font-face {
     font-family: StreetscriptRedux;
     src: url('/css/assets/StreetscriptRedux.otf');
 }
