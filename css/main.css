@@ -5,7 +5,7 @@ body {
     background-image: url('/css/assets/gradient-squares.png');
     overflow-x: hidden !important;
 }
-h1 { 
+h1, h2 { 
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
 }
 .container {
