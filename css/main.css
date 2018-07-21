@@ -8,20 +8,16 @@ body {
 h1, h2 { 
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
 }
+header a {
+    color:#2D2135;
+}
+header a:hover {
+    color:#493954;
+}
+
 .container {
     max-width: 100% !important;
     overflow-x: hidden !important;
-}
-.navbar-nav {
-    width: 100%;
-    text-align: center;
-}
-.navbar-nav li {
-    float: none;
-    display: inline-block;
-}
-.navbar-nav li:hover {
-    background-color: #e2e2e2;
 }
 .text-white {
     color: #FFFFFF !important;
