@@ -24,6 +24,9 @@ a:hover {
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
+.carousel-item {
+    height: 500px;
+}
 img {
   display: block !important;
   width: auto !important;
