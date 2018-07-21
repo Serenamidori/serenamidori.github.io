@@ -27,7 +27,8 @@ a:hover {
 .carousel-item {
     height: 500px;
 }
-img {
+.carousel-inner img {
+  margin: auto !important;
   display: block !important;
   width: auto !important;
   height: 500px !important;
