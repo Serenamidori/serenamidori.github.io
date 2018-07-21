@@ -29,8 +29,8 @@ a:hover {
 }
 img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 .text-white {
     color: #FFFFFF !important;
