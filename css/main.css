@@ -16,7 +16,10 @@ a:hover {
     color: #645172;
     text-decoration: none;
 }
-
+.jumbotron {
+    background-color: rgba(241, 241, 241, 0.8) !important;
+    margin-top: 50px;
+}
 .container {
     max-width: 100% !important;
     overflow-x: hidden !important;
