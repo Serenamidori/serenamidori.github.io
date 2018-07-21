@@ -28,9 +28,9 @@ a:hover {
     height: 500px;
 }
 img {
-  display: block;
-  width: auto;
-  height: 100%;
+  display: block !important;
+  width: auto !important;
+  height: 500px !important;
 }
 .text-white {
     color: #FFFFFF !important;
