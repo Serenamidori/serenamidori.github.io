@@ -30,7 +30,7 @@ a:hover {
 img {
   display: block !important;
   width: auto !important;
-  height: auto !important;
+  height: 500px !important;
 }
 .text-white {
     color: #FFFFFF !important;
