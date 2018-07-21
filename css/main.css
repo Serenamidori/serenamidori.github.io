@@ -8,10 +8,11 @@ body {
 h1, h2 { 
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
 }
-header a {
+a {
     color:#2D2135;
+    text-decoration: none;
 }
-header a:hover {
+a:hover {
     color:#493954;
 }
 
