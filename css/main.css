@@ -9,11 +9,12 @@ h1, h2 {
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
 }
 a {
-    color:#2D2135;
+    color: #2D2135;
     text-decoration: none;
 }
 a:hover {
-    color:#493954;
+    color: #645172;
+    text-decoration: none;
 }
 
 .container {
