@@ -4,19 +4,16 @@ body {
     background-color: #2D2929 !important;
     overflow-x: hidden !important;
 }
-h1, h2 { 
-    font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
-}
 a {
     color: #FFFFFF;
     text-decoration: none;
 }
 a:hover {
-    color: #e3e4c1;
+    color: #8DAD66;
     text-decoration: none;
 }
 .jumbotron {
-    background-color: rgba(241, 241, 241, 0.8) !important;
+    background-color: #393433 !important;
     margin-top: 50px;
 }
 .container {
@@ -27,10 +24,10 @@ a:hover {
     height: 500px;
 }
 .carousel-inner img {
-  margin: auto !important;
-  display: block !important;
-  width: auto !important;
-  height: 500px !important;
+    margin: auto !important;
+    display: block !important;
+    width: auto !important;
+    height: 500px !important;
 }
 .text-white {
     color: #FFFFFF !important;
@@ -50,8 +47,8 @@ a:hover {
     height: 100%;
 }
 .well {
-   background-color: #393433 !important;
-   margin-top: 25px !important;
+    background-color: #393433 !important;
+    margin-top: 25px !important;
 }
 @font-face {
     font-family: StreetscriptRedux;
