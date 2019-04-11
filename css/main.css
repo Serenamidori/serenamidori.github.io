@@ -1,19 +1,18 @@
 body {
     height: 100%;
     font-family: Verdana,Geneva,sans-serif !important;
-    background-color: #11001a !important;
-    background-image: url('/css/assets/gradient-squares.png');
+    background-color: #2D2929 !important;
     overflow-x: hidden !important;
 }
 h1, h2 { 
     font-family: 'StreetscriptRedux', Verdana,Geneva,sans-serif !important; 
 }
 a {
-    color: #2D2135;
+    color: #FFFFFF;
     text-decoration: none;
 }
 a:hover {
-    color: #645172;
+    color: #e3e4c1;
     text-decoration: none;
 }
 .jumbotron {
