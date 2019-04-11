@@ -5,18 +5,18 @@ body {
     overflow-x: hidden !important;
 }
 a {
-    color: #D8C6C3;
+    color: #FFFFFF;
     text-decoration: none;
 }
 a:hover {
-    color: #8DAD66;
+    color: #d06565;
     text-decoration: none;
 }
 h1, h2, p {
     color: #D8C6C3;
 }
 h3, h4 {
-    color: #8DAD66;
+    color: #d06565;
 }
 .jumbotron {
     background-color: #393433 !important;
