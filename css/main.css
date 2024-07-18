@@ -1,10 +1,23 @@
-:root {
-  /* Color scheme from https://www.canva.com/learn/website-color-schemes/ */
-  --ivory-black: #11181f; 
-  --sky-blue: #328cc1;
-  --ice-blue: #e0f0ff;
-  --gold-leaf: #d9b310;
-  --prussian-blue: #083c5d;
+/* Color scheme inspiration from https://www.canva.com/learn/website-color-schemes/ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ivory-black: #121c28; 
+    --sky-blue: #328cc1;
+    --ice-blue: #e0f0ff;
+    --ice-blue-50: rgba(224, 240, 255, 0.65);
+    --gold-leaf: #d9b310;
+    --prussian-blue: #043451;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --ivory-black: #FFF; 
+    --sky-blue: #0D5887;
+    --ice-blue: #070b10;
+    --ice-blue-50: rgba(7, 11, 16, .65);
+    --gold-leaf: #0D5887;
+    --prussian-blue: #f2f5f6;
+  }
 }
 
 body {
@@ -21,7 +34,7 @@ body {
 }
 
 .row.content {
-  margin-top: 72px;
+  margin-top: 60px;
   justify-content: center;
 }
 
@@ -46,6 +59,27 @@ h1 {
     font-size: 2.7rem;
     transition: font-size .3s;
   }
+}
+
+h2 {
+  font-weight: bold;
+  letter-spacing: .35rem;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-weight: bold;
+  letter-spacing: .15rem;
+  font-size: 1.25rem;
+}
+
+h4 {
+  color: var(--ice-blue-50);
+  font-weight: bold;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  font-size: .75rem;
 }
 
 .emphasis {
