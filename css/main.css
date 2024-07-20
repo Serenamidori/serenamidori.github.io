@@ -1,5 +1,5 @@
 /* Color scheme inspiration from https://www.canva.com/learn/website-color-schemes/ */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --ivory-black: #121c28; 
     --sky-blue: #328cc1;
@@ -18,6 +18,16 @@
     --gold-leaf: #0D5887;
     --prussian-blue: #f2f5f6;
   }
+} */
+
+:root {
+  --ivory-black: #121c28;
+  --sky-blue: #328cc1;
+  --sky-blue-50: rgba(50, 140, 193, 0.65);
+  --ice-blue: #e0f0ff;
+  --ice-blue-50: rgba(224, 240, 255, 0.65);
+  --gold-leaf: #d9b310;
+  --prussian-blue: #043451;
 }
 
 body {
@@ -28,19 +38,44 @@ body {
   background-color: var(--ivory-black);
 }
 
-.row.page {
-  margin-top: 96px;
-  justify-content: center;
+a {
+    color: var(--sky-blue);
 }
 
-.row.content {
-  margin-top: 60px;
-  justify-content: center;
+a:hover {
+  color: var(--sky-blue-50);
+  text-decoration: none;
 }
 
-i.fa-pencil:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: 1;
+.row {
+  &.page {
+    padding: 60px 24px;
+    justify-content: center;
+
+    /* Bootstrap Small */
+    @media (min-width: 576px) {
+      padding: 60px 24px;
+    }
+
+    /* Bootstrap Large (and larger) */
+    @media (min-width: 992px) {
+      padding: 96px 0px;
+    }
+
+    /* Bootstrap Medium */
+    @media (min-width: 768px) {
+      padding: 72px 48px;
+    }
+  }
+
+  &.content {
+    padding-top: 48px;
+    justify-content: center;
+  }
+
+  &.credit {
+    color: var(--ice-blue-50)
+  }
 }
 
 h1 {
@@ -51,12 +86,18 @@ h1 {
   }
 
   &.title {
-    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 2.25rem;
     transition: font-size .2s;
+    
+    /* Bootstrap Medium and larger */
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
   }
 
   &.title:hover {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     transition: font-size .3s;
   }
 }
@@ -71,7 +112,11 @@ h2 {
 h3 {
   font-weight: bold;
   letter-spacing: .15rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  /* Bootstrap Medium and larger */
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 }
 
 h4 {
@@ -82,8 +127,37 @@ h4 {
   font-size: .75rem;
 }
 
+.pill {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: .9rem;
+  letter-spacing: .05rem;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--ice-blue);
+  color: var(--ivory-black);
+  margin: 4px 1px;
+  padding: 4px 10px;
+  transition: border-bottom .2s, padding .2s;
+
+}
+
+.pill:hover {
+  margin-top: 0px;
+  border-bottom: 4px solid var(--sky-blue);
+  padding: 4px 10px 0px;
+  cursor: default;
+  transition: border-bottom .1s, padding .1s;
+}
+
 .emphasis {
   color: var(--gold-leaf);
+}
+
+i.fa-pencil:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
 }
 
 /* Animations */
