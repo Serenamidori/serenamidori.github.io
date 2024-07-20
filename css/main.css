@@ -127,6 +127,14 @@ h4 {
   font-size: .75rem;
 }
 
+.section-header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: var(--ivory-black);
+  padding: 24px 0px 12px;
+}
+
 .pill {
   display: inline-block;
   text-align: center;
