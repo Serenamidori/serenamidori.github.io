@@ -27,6 +27,7 @@
   --ice-blue: #e0f0ff;
   --ice-blue-50: rgba(224, 240, 255, 0.65);
   --gold-leaf: #d9b310;
+  --gold-leaf-50: rgb(217, 179, 16, 0.65);
   --prussian-blue: #043451;
 }
 
@@ -40,11 +41,17 @@ body {
 
 a {
     color: var(--sky-blue);
+    &.social-link {
+      color: var(--gold-leaf);
+    }
 }
 
 a:hover {
   color: var(--sky-blue-50);
   text-decoration: none;
+  &.social-link {
+    color: var(--gold-leaf-50);
+  }
 }
 
 .row {
@@ -161,6 +168,11 @@ h4 {
 
 .emphasis {
   color: var(--gold-leaf);
+}
+
+.social-link {
+  font-size: 3rem;
+  margin: 4px;
 }
 
 i.fa-pencil:hover {
