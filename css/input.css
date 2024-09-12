@@ -37,6 +37,13 @@ a:hover {
   }
 }
 
+button {
+  background-color: var(--ice-blue);
+  color: var(--ivory-black);
+  letter-spacing: .05rem;
+  padding: .5rem 1rem;
+}
+
 .page {
   padding: 1rem 1.5rem 4rem;
   margin: 0;
@@ -88,7 +95,7 @@ h1 {
   }
 
   &.title:hover {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     transition: font-size .3s;
   }
 }
@@ -129,22 +136,20 @@ ul {
   top: 0;
   background-color: var(--ivory-black);
   padding: 1.5rem 0 .75rem;
+  /* background-image: linear-gradient(to bottom, rgba(13, 25, 45, 1), 90%, rgba(13, 25, 45, 0));
+  padding: .5rem 0 2rem;
+  margin-top: 1rem 0 2rem; */
 }
 
 .pill {
   display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  font-size: .9rem;
   letter-spacing: .05rem;
   border: none;
-  border-radius: 12px;
   background-color: var(--ice-blue);
   color: var(--ivory-black);
-  margin: 4px 1px;
+  margin: 4px 2px;
   padding: 4px 10px;
   transition: border-bottom .2s, padding .2s;
-
 }
 
 .pill:hover {
