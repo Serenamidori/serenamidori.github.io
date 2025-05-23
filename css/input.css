@@ -8,6 +8,7 @@
   --sky-blue: #328cc1;
   --sky-blue-50: rgba(50, 140, 193, 0.65);
   --ice-blue: #e0f0ff;
+  --ice-blue-dark: #bddfff;
   --ice-blue-50: rgba(224, 240, 255, 0.65);
   --gold-leaf: #dfb806;
   --gold-leaf-50: rgb(217, 179, 16, 0.65);
@@ -53,6 +54,7 @@ button {
 }
 
 .content {
+  width: 100%;
   padding-top: 3.5rem;
 
   @media (min-width: 576px) {
@@ -70,6 +72,12 @@ button {
   @media (min-width: 1200px) {
     max-width: 50%;
   }
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .credit {
@@ -136,9 +144,12 @@ ul {
   top: 0;
   background-color: var(--ivory-black);
   padding: 1.5rem 0 .75rem;
-  /* background-image: linear-gradient(to bottom, rgba(13, 25, 45, 1), 90%, rgba(13, 25, 45, 0));
-  padding: .5rem 0 2rem;
-  margin-top: 1rem 0 2rem; */
+}
+
+.tooltip {
+  color: var(--ivory-black);
+  background-color: var(--ice-blue);
+  border: 2px solid var(--sky-blue);
 }
 
 .pill {
@@ -157,6 +168,7 @@ ul {
   border-bottom: 4px solid var(--sky-blue);
   padding: 4px 10px 0px;
   cursor: default;
+  background-color: var(--ice-blue-dark);
   transition: border-bottom .1s, padding .1s;
 }
 
@@ -205,3 +217,42 @@ i.fa-pencil:hover {
     transform: rotate(0deg);
   }
 }
+
+.image-wrapper {
+	height: fit-content;
+	width: fit-content;
+  border-radius: 50%;
+}
+
+.shine {
+	position: relative;
+	overflow: hidden;
+}
+
+.shine::before {
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.3) 100%
+	);
+	content: "";
+	height: 100%;
+	left: -75%;
+	position: absolute;
+	top: 0;
+	transform: skewX(-25deg);
+	width: 50%;
+	z-index: 2;
+}
+
+.shine:hover::before,
+.shine:focus::before {
+	animation: shine 0.9s;
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+

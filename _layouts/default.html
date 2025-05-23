@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta name="description" content="Gabby Gonzalez is a software engineer with a passion for unique and accessable user experiences.">
+    <meta name="description" content="Gabby Gonzalez is a software engineer with a passion for unique and accessible user experiences.">
     <title>Gabby Gonzalez</title>
     <link rel="icon" type="image/png" href="/css/assets/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="../js/main.js"></script>
   </head>
   <body>
     <div class="page">
@@ -31,38 +34,7 @@
         <div class="section-header">
           <h2>Skills</h2>
         </div>
-        <div>
-          <h3>Proficiencies</h3>
-          <span class="pill rounded-lg text-sm font-bold">Ruby on Rails</span>
-          <span class="pill rounded-lg text-sm font-bold">Java</span>
-          <span class="pill rounded-lg text-sm font-bold">Bootstrap</span>
-          <span class="pill rounded-lg text-sm font-bold">Javascript</span>
-          <span class="pill rounded-lg text-sm font-bold">HTML</span>
-          <span class="pill rounded-lg text-sm font-bold">HAML</span>
-          <span class="pill rounded-lg text-sm font-bold">CSS</span>
-          <span class="pill rounded-lg text-sm font-bold">SQL</span>
-          <span class="pill rounded-lg text-sm font-bold">REST APIs</span>
-          <span class="pill rounded-lg text-sm font-bold">Agile</span>
-          <span class="pill rounded-lg text-sm font-bold">Scrum</span>
-          <span class="pill rounded-lg text-sm font-bold">Jira</span>
-          <span class="pill rounded-lg text-sm font-bold">Git</span>
-          <span class="pill rounded-lg text-sm font-bold">GitHub</span>
-          <span class="pill rounded-lg text-sm font-bold">GitLab</span>
-          <span class="pill rounded-lg text-sm font-bold">Shortcut</span>
-          <span class="pill rounded-lg text-sm font-bold">Heroku</span>
-        </div>
-        <div class="mt-3">
-          <h3>Exposure</h3>
-          <span class="pill rounded-lg text-sm font-bold">React</span>
-          <span class="pill rounded-lg text-sm font-bold">Angular</span>
-          <span class="pill rounded-lg text-sm font-bold">AngularJS</span>
-          <span class="pill rounded-lg text-sm font-bold">C#</span>
-          <span class="pill rounded-lg text-sm font-bold">PHP</span>
-          <span class="pill rounded-lg text-sm font-bold">PostgreSQL</span>
-          <span class="pill rounded-lg text-sm font-bold">MySQL</span>
-          <span class="pill rounded-lg text-sm font-bold">MongoDB</span>
-          <span class="pill rounded-lg text-sm font-bold">AWS</span>
-        </div>
+        <div id="skill-list"></div>
       </div>
 
       <div class="content">
@@ -73,48 +45,34 @@
           <h3>ApproveShield — Software Engineer</h3>
           <h4>February 2024 - Present</h4>
           <ul class="list-disc">
-            <li>Tech stack: Ruby on Rails, HAML, JavaScript, CSS, MySQL, AWS, Heroku, Git</li>
-            <li>Developed feature implementations and bug fixes for unique rental verification software in Ruby on Rails.</li>
-            <li>Took on an integration project within first two weeks, boosting productivity by automating the process of requesting third party documents for rental verifications.</li>
-            <li>Completely overhauled the company website alongside UI/UX designer to bolster the company's place in the rental verification industry.</li>
-            <li>Implemented on-call process for the team to allow for better communication with leadership during emergencies.</li>
-            <li>Promoted cross-team collaboration through biweekly meetings with department leaders, addressing new issues in a timely and efficient manner.</li>
+            <li>Developing a modernized analyst interface as a single-page Rails app aimed to eliminate tab-switching and improve daily productivity.</li>
+            <li>Introduced an automated rental history verification system that increased analyst productivity, including third-party integration for address data normalization and validation.</li>
+            <li>Overhauled company website and UI/UX to improve market positioning.</li>
+            <li>Established on-call process to improve communication with leadership during emergencies.</li>
           </ul>
         </div>
         <div class="mb-4">
           <h3>GetWell — Senior Software Engineer</h3>
           <h4>June 2022 - July 2023</h4>
           <ul class="list-disc">
-            <li>Tech stack: Ruby on Rails, React, Java, HAML, JavaScript, CSS, PostgreSQL, AWS, Git</li>
-            <li>Resolved bugs and implemented features within a 2-week sprint cycle with accurate metrics.</li>
-            <li>Actively assisted the support team by resolving emergency tickets in on-call rotation with dev team members.</li>
-            <li>Collaborated with cross-functional teams to ensure prompt feedback and effective issue resolution.</li>
-            <li>Developed service to link disparate products within the company using Ruby on Rails and React, with emphasis on integration with external APIs and internal API creation.</li> 
-            <li>Spearheaded bug fixes and unit tests for a legacy Java project importing medical records via CSV files.</li>
-            <li>Improved remote team collaboration utilizing pair and mob programming practices, speeding up ticket productivity.</li>               
+            <li>Built integration service connecting disparate company products using Ruby on Rails and React, including external API integrations and internal API development.</li>
+            <li>Maintained legacy Java application for medical record imports, implementing bug fixes and unit tests.
+            <li>Resolved emergency tickets through on-call rotation and cross-functional collaboration.</li>              
+            <li>Improved team productivity through pair and mob programming practices</li>              
           </ul>
         </div>
         <div class="mb-4">
           <h3>ABCorp — Software Engineer</h3>
           <h4>April 2020 - June 2022</h4>
           <ul class="list-disc">
-            <li>Tech stack: C#, JSON, XML, AngularJS, JavaScript, HTML, CSS, SQL, SSMS, Git</li>
-            <li>Developed C# software and hardware integrations focused on credit card printers and PIN pad devices.</li>
-            <li>Independently executed a critical project to integrate Instant Issuance software with a touch screen kiosk, demonstrating  full functionality to company stakeholders.</li>
-            <li>Trained team members on Git best practices, code deployment, and front-end design.</li>
-            <li>Actively supported the tier 1 support team in addressing customer concerns promptly and effectively.</li>
+            <li>Developed C# applications for credit card printer and PIN pad hardware integrations, including a critical touch screen kiosk project for Instant Issuance software.</li>
           </ul>
         </div>
         <div class="mb-4">
           <h3>Kibo Commerce — Software Engineer II</h3>
           <h4>August 2016 - February 2020</h4>
           <ul class="list-disc">
-            <li>Tech stack: Java, PHP, C#, JSON, Spring Boot, React, Angular, jQuery, JavaScript, HTML, CSS, MySQL, Git</li>
-            <li>Participated in bootcamp training courses provided by the company to learn Git best practices, PHP,  React, and database management with MySQL/MongoDB.</li>
-            <li>Expanded early coding skills with Java working with the Order Management product.</li>
-            <li>Consulted remotely with the Austin eCommerce team in C# and Angular as a front-end engineer.</li>
-            <li>Grew with mentorship relationships, utilizing their guidance and expertise to enhance my technical skills and refine problem-solving approaches.</li>
-            <li>Won a prize in company-wide Hackathon for React Native mobile app to expand the company's product abilities.</li>
+            <li>Developed Customer Care application front-end and Order Management System integrations using Java, including hardware integration with Zebra scanners</li>
           </ul>
         </div>
       </div>
@@ -142,6 +100,23 @@
         </div>
       </div>
 
+      <div class="content">
+        <div class="section-header">
+          <h2>Certifications</h2>
+        </div>
+        <div class="cert-card gap-4">
+          <a href="https://www.credential.net/0b050f81-e977-469e-986b-e2800227c47d#acc.KdrqBmCW" target="_blank">
+            <div class="image-wrapper shine">
+              <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/133960026">
+            </div>
+          </a>
+          <div>
+            <h3>Ruby Association Certified Ruby Developer (Silver)</h3>
+            <h4>Ruby Association (2025)</h4>
+          </div>
+        </div>
+      </div>
+
       <div class="content text-center mt-4">
         <div>
           You can also find me at:
@@ -152,7 +127,6 @@
           <a class="social-link" aria-label="Send Gabby an email" href="mailto:gabriela.g.serenamidori@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
         </div>
       </div>
-        
     </div>
 
     <footer>
