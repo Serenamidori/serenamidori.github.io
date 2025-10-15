@@ -735,20 +735,27 @@ a:hover {
 
 .project-card {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   justify-content: start;
   color: var(--ice-blue);
   padding: 1rem 1.5rem;
   background-color: var(--ice-blue-25);
   border-radius: 10px;
 
-  .preview {
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  img {
     min-width: 250px;
     border-radius: 5px;
     opacity: 0.75;
     transition: opacity .5s;
   }
 
-  .preview:hover {
+  img:hover {
     opacity: 1;
     transition: opacity .5s;
   }
@@ -768,10 +775,10 @@ h1 {
       font-size: 2.5rem;
     }
 
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* Internet Explorer/Edge */
-  user-select: none;         /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Standard syntax */
   }
 
   .animate-wave {
