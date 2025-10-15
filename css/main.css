@@ -618,7 +618,7 @@ video {
   border-radius: 0.5rem;
 }
 
-.bg-ivory-black {
+.bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(13 25 45 / var(--tw-bg-opacity));
 }
@@ -661,51 +661,50 @@ video {
 /* Color scheme inspiration from https://www.canva.com/learn/website-color-schemes/ */
 
 :root {
-  --ivory-black: #0d192d;
-  --sky-blue: #328cc1;
-  --sky-blue-50: rgba(50, 140, 193, 0.65);
-  --ice-blue: #e0f0ff;
-  --ice-blue-dark: #bddfff;
-  --ice-blue-50: rgba(224, 240, 255, 0.65);
-  --ice-blue-25: rgba(224, 240, 255, 0.10);
-  --gold-leaf: #dfb806;
-  --gold-leaf-50: rgb(217, 179, 16, 0.65);
-  --prussian-blue: #043451;
+  --primary: #0d192d;
+  --secondary: #e0f0ff;
+  --secondary-dark: #bddfff;
+  --secondary-50: rgba(224, 240, 255, 0.65);
+  --secondary-25: rgba(224, 240, 255, 0.10);
+  --tertiary: #328cc1;
+  --tertiary-50: rgba(50, 140, 193, 0.65);
+  --accent: #dfb806;
+  --accent-50: rgb(217, 179, 16, 0.65);
 }
 
 body {
   height: 100%;
   overflow-x: hidden;
   font-family: Nunito, sans-serif;
-  color: var(--ice-blue);
-  background-color: var(--ivory-black);
+  color: var(--secondary);
+  background-color: var(--primary);
 }
 
 a {
-  color: var(--sky-blue);
+  color: var(--tertiary);
   &.social-link {
-    color: var(--gold-leaf);
+    color: var(--accent);
   }
 }
 
 a:hover {
-  color: var(--sky-blue-50);
+  color: var(--tertiary-50);
   text-decoration: none;
   &.social-link {
-    color: var(--gold-leaf-50);
+    color: var(--accent-50);
   }
 }
 
 .button {
-  background-color: var(--ice-blue);
-  color: var(--ivory-black);
+  background-color: var(--secondary);
+  color: var(--primary);
   letter-spacing: .05rem;
   padding: .5rem 1rem;
 }
 
 .button:hover {
-  background-color: var(--ice-blue-dark);
-  color: var(--ivory-black);
+  background-color: var(--secondary-dark);
+  color: var(--primary);
   letter-spacing: .05rem;
   padding: .5rem 1rem;
 }
@@ -744,8 +743,8 @@ a:hover {
 .project-card {
   flex-direction: column;
   padding: 1rem 1.5rem;
-  color: var(--ice-blue);
-  background-color: var(--ice-blue-25);
+  color: var(--secondary);
+  background-color: var(--secondary-25);
   border-radius: 10px;
 
   @media (min-width: 768px) {
@@ -766,11 +765,20 @@ a:hover {
 }
 
 .faded {
-  color: var(--ice-blue-50)
+  color: var(--secondary-50);
+}
+
+.previous {
+  display: none;
+  color: var(--secondary-50);
+  margin-top: -6px;
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 h1 {
-  color: var(--ice-blue);
+  color: var(--secondary);
 
   &.title {
     font-weight: bold;
@@ -788,6 +796,7 @@ h1 {
   .animate-wave {
     --fa-animation-duration: 8s;
     --fa-animation-iteration-count: 1;
+    transition: font-size .25s;
   }
 
   .animate-wave:hover {
@@ -797,6 +806,7 @@ h1 {
   .animate-wave:active {
     cursor: grab;
     font-size: 3rem;
+    transition: font-size .15s;
   }
 }
 
@@ -818,7 +828,7 @@ h3 {
 }
 
 h4 {
-  color: var(--ice-blue-50);
+  color: var(--secondary-50);
   font-weight: bold;
   letter-spacing: .15rem;
   text-transform: uppercase;
@@ -831,7 +841,7 @@ ul {
 }
 
 ol {
-  border-left: 3px solid var(--ice-blue-25);
+  border-left: 3px solid var(--secondary-25);
 }
 
 .bullet {
@@ -839,14 +849,14 @@ ol {
 }
 
 .section-header {
-  background-color: var(--ivory-black);
+  background-color: var(--primary);
   padding: 1.5rem 0 .75rem;
 }
 
 .tooltip {
-  color: var(--ivory-black);
-  background-color: var(--ice-blue);
-  border: 2px solid var(--sky-blue);
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: 2px solid var(--tertiary);
 }
 
 .pill {
@@ -854,8 +864,8 @@ ol {
   letter-spacing: .05rem;
   font-size: .75rem;
   border: none;
-  background-color: var(--ice-blue);
-  color: var(--ivory-black);
+  background-color: var(--secondary);
+  color: var(--primary);
   margin: 4px 2px;
   padding: 4px 8px;
 }
@@ -867,15 +877,15 @@ ol {
 .pill.hover:hover {
   margin-top: 0px;
   font-size: .75rem;
-  border-bottom: 4px solid var(--sky-blue);
+  border-bottom: 4px solid var(--tertiary);
   padding: 4px 8px 0px;
   cursor: default;
-  background-color: var(--ice-blue-dark);
+  background-color: var(--secondary-dark);
   transition: border-bottom .1s, padding .1s;
 }
 
 .emphasis {
-  color: var(--gold-leaf);
+  color: var(--accent);
 }
 
 .social-link {
