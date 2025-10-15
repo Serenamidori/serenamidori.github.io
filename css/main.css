@@ -574,12 +574,20 @@ video {
   margin-top: 1rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .block {
   display: block;
 }
 
 .hidden {
   display: none;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .h-0 {
@@ -734,13 +742,9 @@ a:hover {
 }
 
 .project-card {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  justify-content: start;
-  color: var(--ice-blue);
   padding: 1rem 1.5rem;
+  color: var(--ice-blue);
   background-color: var(--ice-blue-25);
   border-radius: 10px;
 
