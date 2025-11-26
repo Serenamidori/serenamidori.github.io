@@ -758,6 +758,7 @@ a:hover {
 
 .project-card {
   padding: 1rem 1.5rem;
+  margin: 1.75rem 0;
   color: var(--secondary);
   background-color: var(--secondary-25);
   border-radius: 10px;
