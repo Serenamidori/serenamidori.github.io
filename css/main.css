@@ -678,6 +678,7 @@ video {
 
 :root {
   --primary: #0d192d;
+  --primary-dark: #040a13;
   --secondary: #e0f0ff;
   --secondary-dark: #bddfff;
   --secondary-50: rgba(224, 240, 255, 0.65);
@@ -694,6 +695,29 @@ body {
   font-family: Nunito, sans-serif;
   color: var(--secondary);
   background-color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  body::before,
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  body::before {
+    left: 0;
+    background: linear-gradient(to right, var(--primary-dark), transparent);
+  }
+
+  body::after {
+    right: 0;
+    background: linear-gradient(to left, var(--primary-dark), transparent);
+  }
 }
 
 a {
@@ -861,7 +885,6 @@ ol {
 }
 
 .section-header {
-  background-color: var(--primary);
   padding: 1.5rem 0 .75rem;
 }
 
