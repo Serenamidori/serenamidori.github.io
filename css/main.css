@@ -777,6 +777,7 @@ a:hover {
 
   img {
     min-width: 250px;
+    max-width: 250px;
     border-radius: 5px;
     opacity: 0.75;
     transition: opacity .5s;
